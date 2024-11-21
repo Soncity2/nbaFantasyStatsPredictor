@@ -13,7 +13,7 @@ def read_excel_sheet(file_path, sheet_name):
     """
     try:
         # Read the specified sheet
-        df = pd.read_excel(file_path, sheet_name=sheet_name)
+        df = pd.read_excel(file_path, sheet_name=sheet_name, index_col=0)
         return df
     except Exception as e:
         print(f"Error: {e}")
